@@ -6,7 +6,10 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     //menghubungkan ke mongodb menggunakan url koneksi
-    await mongoose.connect("mongodb://localhost:27017/mdpdb");
+    await mongoose.connect(
+      "mongodb+srv://marcelalpinsanty2226240044:35414733@cluster0.4altj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      // "mongodb://localhost:27017/mdpdb"
+    );
     // jika koneksi berhasil log pesan ke konsol
     console.log("MongoDb Connected");
   } catch (error) {
